@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohanad Ahmed Usama | Cybersecurity Specialist & Penetration Tester</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Source+Code+Pro:wght@400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">CyberSec</span>
+            </div>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="#home" class="nav-link" role="menuitem">Home</a></li>
+                <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+                <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
+                <li role="none"><a href="#experience" class="nav-link" role="menuitem">Experience</a></li>
+                <li role="none"><a href="#certifications" class="nav-link" role="menuitem">Certifications</a></li>
+                <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
+                <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle between dark and light mode" aria-pressed="false">
+                    <div class="theme-slider">
+                        <span class="theme-icon" aria-hidden="true">🌙</span>
+                    </div>
+                </button>
+                <button class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span class="bar" aria-hidden="true"></span>
+                    <span class="bar" aria-hidden="true"></span>
+                    <span class="bar" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-main">Mohanad Ahmed</span>
+                    <span class="title-sub">Usama</span>
+                </h1>
+                <p class="hero-subtitle">Cybersecurity Specialist & Penetration Tester</p>
+                <p class="hero-description">
+                    Computer Science Expert with specialized training in penetration testing 
+                    and ethical hacking. Experienced in vulnerability assessment, network analysis, 
+                    and web application security testing using industry-standard tools.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Portfolio</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="btn-close"></span>
+                            <span class="btn-minimize"></span>
+                            <span class="btn-maximize"></span>
+                        </div>
+                        <span class="terminal-title">penetration-test.sh</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="prompt">root@kali:~#</span>
+                            <span class="command">nmap -sS -O target.com</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="output">Starting Nmap scan...</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="output success">22/tcp open ssh</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="output success">80/tcp open http</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="output warning">443/tcp open https</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="prompt">root@kali:~#</span>
+                            <span class="command typing">sqlmap -u "target.com" --dbs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        As a highly motivated Computer Science Expert with a strong foundation in algorithms, 
+                        software development, and database systems, I bring proven ability to apply Python, C#, 
+                        and SQL in academic and personal projects. My specialized training in penetration testing 
+                        includes hands-on experience with industry-standard tools like Wireshark and Burp Suite 
+                        for vulnerability assessment and network analysis.
+                    </p>
+                    <p>
+                        Currently pursuing my degree at Menoufia University with a GPA of 3.67, I have completed 
+                        relevant coursework in Data Structures, Operating Systems, Software Engineering, Computer 
+                        Networks, and Artificial Intelligence. I am eager to leverage my problem-solving and 
+                        teamwork skills to contribute to dynamic tech teams and drive innovative security solutions.
+                    </p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">2</span>
+                            <span class="stat-label">Security Certifications</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3.67</span>
+                            <span class="stat-label">GPA</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">2026</span>
+                            <span class="stat-label">Expected Graduation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="mohanad_usama.jpg" alt="Mohanad Ahmed Usama - Cybersecurity Specialist and Penetration Tester" class="profile-photo" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Penetration Testing & Security</h3>
+                    <ul>
+                        <li>Network Security</li>
+                        <li>Vulnerability Assessment</li>
+                        <li>Packet Analysis (Wireshark)</li>
+                        <li>Web Application Testing (Burp Suite)</li>
+                        <li>XSS/SQLi Detection</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Security Tools</h3>
+                    <div class="tools-grid">
+                        <div class="tool-item">
+                            <span class="tool-icon">🔍</span>
+                            <span>Nmap</span>
+                        </div>
+                        <div class="tool-item">
+                            <span class="tool-icon">⚡</span>
+                            <span>Metasploit</span>
+                        </div>
+                        <div class="tool-item">
+                            <span class="tool-icon">🔧</span>
+                            <span>Burp Suite</span>
+                        </div>
+                        <div class="tool-item">
+                            <span class="tool-icon">📊</span>
+                            <span>Wireshark</span>
+                        </div>
+                        <div class="tool-item">
+                            <span class="tool-icon">🐍</span>
+                            <span>Python</span>
+                        </div>
+                        <div class="tool-item">
+                            <span class="tool-icon">💻</span>
+                            <span>Kali Linux</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Programming & Development</h3>
+                    <ul>
+                        <li>Python - Advanced</li>
+                        <li>C# - Proficient</li>
+                        <li>SQL & SQLite - Database Management</li>
+                        <li>Git & GitHub - Version Control</li>
+                        <li>Visual Studio & VS Code</li>
+                        <li>Object-Oriented Programming (OOP)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>Research Member</h3>
+                            <span class="experience-period">2022 - 2023</span>
+                        </div>
+                        <div class="experience-company">CompuMATH for Applied Research</div>
+                    </div>
+                    <div class="experience-content">
+                        <p>
+                            Contributed to applied research initiatives in computational mathematics, 
+                            collaborating on interdisciplinary projects that bridge theoretical concepts 
+                            with practical applications in computer science and mathematical modeling.
+                        </p>
+                        <div class="experience-skills">
+                            <span class="experience-skill">Research</span>
+                            <span class="experience-skill">Mathematics</span>
+                            <span class="experience-skill">Computational Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>Active Member</h3>
+                            <span class="experience-period">2023 - Present</span>
+                        </div>
+                        <div class="experience-company">Entrepreneurship Club, Menoufia University</div>
+                    </div>
+                    <div class="experience-content">
+                        <p>
+                            Active participant in entrepreneurship initiatives, developing business 
+                            acumen and innovation skills while collaborating on startup projects 
+                            and networking with industry professionals and fellow entrepreneurs.
+                        </p>
+                        <div class="experience-skills">
+                            <span class="experience-skill">Business Development</span>
+                            <span class="experience-skill">Innovation</span>
+                            <span class="experience-skill">Networking</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>Member</h3>
+                            <span class="experience-period">Present</span>
+                        </div>
+                        <div class="experience-company">Computality Group, Menoufia University</div>
+                    </div>
+                    <div class="experience-content">
+                        <p>
+                            Contributing to computational research and development projects, 
+                            focusing on advanced computing techniques and collaborative 
+                            problem-solving in computer science applications and algorithms.
+                        </p>
+                        <div class="experience-skills">
+                            <span class="experience-skill">Algorithm Design</span>
+                            <span class="experience-skill">Problem Solving</span>
+                            <span class="experience-skill">Team Collaboration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="certification-header">
+                        <h3>AWS Cloud Foundations</h3>
+                        <span class="certification-type">Cloud Security</span>
+                    </div>
+                    <div class="certification-content">
+                        <p>
+                            Completed AWS Academy Cloud Foundations certification, demonstrating 
+                            foundational knowledge of AWS cloud concepts, services, security 
+                            architecture, pricing, and support structures essential for cloud security.
+                        </p>
+                        <div class="certification-tech">
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Cloud Security</span>
+                            <span class="tech-tag">Architecture</span>
+                            <span class="tech-tag">Best Practices</span>
+                        </div>
+                    </div>
+                    <div class="certification-footer">
+                        <a href="https://www.credly.com/badges/d015d467-63e7-4c78-842d-11fb9624f09a/public_url" target="_blank" class="btn btn-outline">View Certificate</a>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-header">
+                        <h3>Penetration Testing Training</h3>
+                        <span class="certification-type">Security Assessment</span>
+                    </div>
+                    <div class="certification-content">
+                        <p>
+                            Completed comprehensive penetration testing and ethical hacking training 
+                            through NTI, covering vulnerability assessment methodologies, network 
+                            analysis, and web application security testing using industry-standard tools.
+                        </p>
+                        <div class="certification-tech">
+                            <span class="tech-tag">Wireshark</span>
+                            <span class="tech-tag">Burp Suite</span>
+                            <span class="tech-tag">Nmap</span>
+                            <span class="tech-tag">Metasploit</span>
+                        </div>
+                    </div>
+                    <div class="certification-footer">
+                        <button class="btn btn-outline">View Certificate</button>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-header">
+                        <h3>Introduction to Python</h3>
+                        <span class="certification-type">Programming</span>
+                    </div>
+                    <div class="certification-content">
+                        <p>
+                            Completed Introduction to Python course through DataCamp, gaining 
+                            foundational knowledge in Python programming including data types, 
+                            control structures, functions, and basic data manipulation techniques 
+                            essential for cybersecurity and data analysis applications.
+                        </p>
+                        <div class="certification-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Programming</span>
+                            <span class="tech-tag">Data Types</span>
+                            <span class="tech-tag">Functions</span>
+                        </div>
+                    </div>
+                    <div class="certification-footer">
+                        <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/2e1f6d686d8d84578563b09948b4ad6c0af0706d" target="_blank" class="btn btn-outline">View Certificate</a>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-header">
+                        <h3>Intermediate Python</h3>
+                        <span class="certification-type">Programming</span>
+                    </div>
+                    <div class="certification-content">
+                        <p>
+                            Completed Intermediate Python course through DataCamp, advancing skills 
+                            in Python programming with focus on data structures, object-oriented 
+                            programming, error handling, and advanced programming concepts essential 
+                            for cybersecurity automation and data analysis.
+                        </p>
+                        <div class="certification-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OOP</span>
+                            <span class="tech-tag">Data Structures</span>
+                            <span class="tech-tag">Error Handling</span>
+                        </div>
+                    </div>
+                    <div class="certification-footer">
+                        <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/2e1f6d686d8d84578563b09948b4ad6c0af0706d" target="_blank" class="btn btn-outline">View Certificate</a>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-header">
+                        <h3>Understanding Data Science</h3>
+                        <span class="certification-type">Data Science</span>
+                    </div>
+                    <div class="certification-content">
+                        <p>
+                            Completed Understanding Data Science course through DataCamp, gaining 
+                            comprehensive knowledge of data science fundamentals including data analysis, 
+                            statistical concepts, machine learning basics, and data visualization 
+                            techniques essential for cybersecurity analytics and threat intelligence.
+                        </p>
+                        <div class="certification-tech">
+                            <span class="tech-tag">Data Science</span>
+                            <span class="tech-tag">Analytics</span>
+                            <span class="tech-tag">Statistics</span>
+                            <span class="tech-tag">Machine Learning</span>
+                        </div>
+                    </div>
+                    <div class="certification-footer">
+                        <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/bb2df860abf4cdf68a19b21f37b0b624ebab7a6a" target="_blank" class="btn btn-outline">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Library Management System</h3>
+                        <span class="project-type">Desktop Application</span>
+                    </div>
+                    <div class="project-content">
+                        <p>
+                            Developed a comprehensive desktop application to efficiently manage student 
+                            records and budget allocations. Implemented robust CRUD operations using 
+                            SQLite, ensuring data integrity and accessibility with an intuitive 
+                            WinForms interface.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">WinForms</span>
+                            <span class="tech-tag">CRUD Operations</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <button class="btn btn-outline">View on GitHub</button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Academic Coursework</h3>
+                        <span class="project-type">Computer Science</span>
+                    </div>
+                    <div class="project-content">
+                        <p>
+                            Comprehensive computer science education covering Data Structures, 
+                            Operating Systems, Software Engineering, Computer Networks, and 
+                            Artificial Intelligence with a strong GPA of 3.67.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Data Structures</span>
+                            <span class="tech-tag">Operating Systems</span>
+                            <span class="tech-tag">Networks</span>
+                            <span class="tech-tag">AI</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <button class="btn btn-outline">View Transcript</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-intro">
+                <p class="contact-subtitle">Ready to secure your digital assets? Let's discuss how I can help protect your organization.</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-card-header">
+                            <h3>Let's Connect</h3>
+                            <p>I'm actively seeking opportunities in cybersecurity and penetration testing. Whether you're looking for a dedicated team member or need security consulting, I'm ready to contribute my expertise.</p>
+                        </div>
+
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon-wrapper">
+                                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Email</span>
+                                    <a href="mailto:mohanadusama2004@gmail.com" class="contact-value">mohanadusama2004@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="contact-icon-wrapper">
+                                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Phone</span>
+                                    <a href="tel:+201020791946" class="contact-value">+20 102 079 1946</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="contact-icon-wrapper">
+                                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                        <rect x="2" y="9" width="4" height="12"></rect>
+                                        <circle cx="4" cy="4" r="2"></circle>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">LinkedIn</span>
+                                    <a href="https://www.linkedin.com/in/mohanad-usama" target="_blank" class="contact-value">linkedin.com/in/mohanad-usama</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="contact-icon-wrapper">
+                                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">GitHub</span>
+                                    <a href="https://github.com/MohanadUsama" target="_blank" class="contact-value">github.com/MohanadUsama</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="contact-icon-wrapper">
+                                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Location</span>
+                                    <span class="contact-value">Menofia, Egypt</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="availability-status">
+                            <div class="status-indicator"></div>
+                            <span>Available for new opportunities</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <div class="form-card">
+                        <div class="form-header">
+                            <h3>Send a Message</h3>
+                            <p>Have a project in mind? Let's discuss how we can secure your digital infrastructure.</p>
+                        </div>
+
+                        <form class="contact-form-inner">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Full Name *</label>
+                                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company">Company/Organization</label>
+                                <input type="text" id="company" name="company" placeholder="Your company name (optional)">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a topic</option>
+                                    <option value="penetration-testing">Penetration Testing Services</option>
+                                    <option value="security-consultation">Security Consultation</option>
+                                    <option value="job-opportunity">Job Opportunity</option>
+                                    <option value="collaboration">Collaboration</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project or how I can help..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span>Send Message</span>
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22,2 15,22 11,13 2,9"></polygon>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+        <div class="footer-content">
+            <p>&copy; 2025 Mohanad Ahmed Usama. All rights reserved.</p>
+            <p>Securing the digital world, one vulnerability at a time.</p>
+        </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
