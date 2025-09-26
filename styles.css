@@ -6,6 +6,14 @@
     box-sizing: border-box;
 }
 
+/* Ensure full height coverage on all devices, especially mobile */
+html {
+    height: 100%;
+    min-height: 100vh;
+    /* Support for mobile browsers with dynamic viewport */
+    min-height: 100dvh;
+}
+
 :root {
     /* Dark theme (default) */
     --primary-bg: #0a0a0a;
@@ -59,6 +67,11 @@ body {
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* Ensure full height coverage on mobile */
+    min-height: 100vh;
+    min-height: 100dvh;
+    /* Prevent background cutoff on mobile */
+    background-attachment: scroll;
 }
 
 .container {
@@ -276,11 +289,17 @@ body {
 /* Hero Section */
 .hero {
     min-height: 100vh;
+    /* Support for mobile browsers with dynamic viewport */
+    min-height: 100dvh;
     display: flex;
     align-items: center;
     background: var(--gradient-dark);
     position: relative;
     overflow: hidden;
+    /* Ensure background covers full area on mobile */
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .hero::before {
@@ -1237,6 +1256,25 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Mobile background fixes */
+    html, body {
+        min-height: 100vh;
+        min-height: 100dvh;
+        background-attachment: scroll;
+    }
+
+    .hero {
+        min-height: 100vh;
+        min-height: 100dvh;
+        /* Ensure background covers full mobile viewport */
+        background-attachment: scroll;
+    }
+
+    .contact {
+        /* Ensure contact section background covers full mobile viewport */
+        background-attachment: scroll;
+    }
+
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -1353,6 +1391,23 @@ body {
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    /* Additional mobile background fixes */
+    body {
+        /* Prevent background cutoff on mobile browsers */
+        background-attachment: scroll !important;
+        /* Ensure minimum height covers viewport */
+        min-height: 100vh;
+        min-height: 100dvh;
+    }
+
+    /* Fix for sections with gradient backgrounds */
+    .hero, .contact {
+        background-attachment: scroll !important;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }
 
@@ -1664,5 +1719,45 @@ html {
     border-top: 1px solid var(--border-color);
 }
 
+/* iOS Safari specific fixes for background and viewport issues */
+@supports (-webkit-touch-callout: none) {
+    html, body {
+        min-height: -webkit-fill-available;
+    }
 
+    .hero {
+        min-height: -webkit-fill-available;
+    }
 
+    /* Fix for iOS Safari background attachment issues */
+    body, .hero, .contact {
+        background-attachment: scroll !important;
+    }
+}
+
+/* Additional mobile browser compatibility */
+@media screen and (max-device-width: 812px) {
+    html {
+        min-height: 100vh;
+        min-height: 100dvh;
+        min-height: -webkit-fill-available;
+    }
+
+    body {
+        min-height: 100vh;
+        min-height: 100dvh;
+        min-height: -webkit-fill-available;
+        background-attachment: scroll !important;
+    }
+
+    .hero {
+        min-height: 100vh;
+        min-height: 100dvh;
+        min-height: -webkit-fill-available;
+        background-attachment: scroll !important;
+    }
+
+    .contact {
+        background-attachment: scroll !important;
+    }
+}
